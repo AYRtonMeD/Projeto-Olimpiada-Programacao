@@ -6,12 +6,16 @@ void pilhas ();
 /*
     Revisão:
     stack <a> p        cria uma pilha de tipo a de nome p
-    stack.empty()      diz se a pilha está ou não vazia
-    stack.size()       diz quantos elementos há na pilha
-    stack.top()        diz o valor do elemento no topo da pilha
-    stack.push(x)      adiciona o valor x no topo da pilha
-    stack.pop()        remove o elemento do topo da pilha
-    stack.swap(stack)  troca o conteudo de duas pilhas
+    stack.empty()      diz se a pilha está ou não vazia          O(1)
+    stack.size()       diz quantos elementos há na pilha         O(1)
+    stack.top()        diz o valor do elemento no topo da pilha  O(1)
+    stack.push(x)      adiciona o valor x no topo da pilha       O(1)
+    stack.pop()        remove o elemento do topo da pilha        O(1)
+    stack.swap(stack)  troca o conteudo de duas pilhas           O(1)
+
+    Links:
+    http://www.cplusplus.com/reference/stack/stack/
+    https://www.geeksforgeeks.org/stack-in-cpp-stl/
 */
 
 int main(){
