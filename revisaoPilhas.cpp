@@ -1,6 +1,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void pilhas ();
+
+/*
+    Revisão:
+    stack <a> p        cria uma pilha de tipo a de nome p
+    stack.empty()      diz se a pilha está ou não vazia
+    stack.size()       diz quantos elementos há na pilha
+    stack.top()        diz o valor do elemento no topo da pilha
+    stack.push(x)      adiciona o valor x no topo da pilha
+    stack.pop()        remove o elemento do topo da pilha
+    stack.swap(stack)  troca o conteudo de duas pilhas
+*/
+
+int main(){
+    pilhas();
+
+    return 0;
+}
+
+
+
+
+
 //Aqui serão testadas as estruturas de dados pilha
 //Pilhas são estuturas de dados onde os elementos são  sempre adicionados no
 //final dela, e só pode retirar o ultimo atual da pilha
@@ -111,26 +134,4 @@ void pilhas () {
     copyValor.swap(valor);                                             //Troca o conteudo de duas pilhas
                                                                        //no caso troca os valores das pilha
                                                                        //valor e copyValor(que esta vazia)
-
-
-
-
-    /*
-    Revisão
-    stack <a> p        cria uma pilha de tipo a e nome p
-    stack.empty()      diz se a pilha está ou não vazia
-    stack.size()       diz quantos elementos há na pilha
-    stack.top()        diz o valor do elemento no topo da pilha
-    stack.push(x)      adiciona o valor x no topo da pilha
-    stack.pop()        remove o elemento do topo da pilha
-    stack.swap(stack)  troca o conteudo de duas pilhas
-    */
-
-}
-
-
-int main(){
-    pilhas();
-
-    return 0;
 }
