@@ -68,19 +68,19 @@ void queues (){
 
 
     numero.push (10);                                                       //Adiciona o valor na fila
-    cout << "\nValor no final da fila numero : " << numero.back() << endl;    //imprimi o valor no final da fila
+    cout << "\nValor no final da fila numero : " << numero.back() << endl;  //imprimi o valor no final da fila
     cout << "Valor no inicio da fila numero : " << numero.front() << endl;  //imprimi o valor no inicio da fila
 
     numero.push (20);                                                       //Adiciona o valor na fila
-    cout << "\nValor no final da fila numero : " << numero.back() << endl;    //imprimi o valor no final da fila
+    cout << "\nValor no final da fila numero : " << numero.back() << endl;  //imprimi o valor no final da fila
     cout << "Valor no inicio da fila numero : " << numero.front() << endl;  //imprimi o valor no inicio da fila
 
     numero.push (30);                                                       //Adiciona o valor na fila
-    cout << "\nValor no final da fila numero : " << numero.back() << endl;    //imprimi o valor no final da fila
+    cout << "\nValor no final da fila numero : " << numero.back() << endl;  //imprimi o valor no final da fila
     cout << "Valor no inicio da fila numero : " << numero.front() << endl;  //imprimi o valor no inicio da fila
 
 
-    cout << "\nTamanho da fila numero : " << numero.size() << endl;           //Retorna quantos elementos ha na fila
+    cout << "\nTamanho da fila numero : " << numero.size() << endl;         //Retorna quantos elementos ha na fila
 
 
 
@@ -101,19 +101,19 @@ void queues (){
 
 
     character.push ('a');                                                           //Adiciona o valor na fila
-    cout << "\nValor no final da fila character : " << character.back() << endl;      //imprimi o valor no final da fila
+    cout << "\nValor no final da fila character : " << character.back() << endl;    //imprimi o valor no final da fila
     cout << "Valor no inicio da fila character : " << character.front() << endl;    //imprimi o valor no inicio da fila
 
     character.push ('b');                                                           //Adiciona o valor na fila
-    cout << "\nValor no final da fila character : " << character.back() << endl;      //imprimi o valor no final da fila
+    cout << "\nValor no final da fila character : " << character.back() << endl;    //imprimi o valor no final da fila
     cout << "Valor no inicio da fila character : " << character.front() << endl;    //imprimi o valor no inicio da fila
 
     character.push ('c');                                                           //Adiciona o valor na fila
-    cout << "\nValor no final da fila character : " << character.back() << endl;      //imprimi o valor no final da fila
+    cout << "\nValor no final da fila character : " << character.back() << endl;    //imprimi o valor no final da fila
     cout << "Valor no inicio da fila character : " << character.front() << endl;    //imprimi o valor no inicio da fila
 
 
-    cout << "\nTamanho da fila character : " << character.size() << endl;             //Retorna quantos elementos ha na fila
+    cout << "\nTamanho da fila character : " << character.size() << endl;           //Retorna quantos elementos ha na fila
 
 
 
@@ -135,17 +135,17 @@ void queues (){
 
     character.pop();                                                                //Remove o primeiro elemento da fila
 
-    cout << "\nTamanho da fila character : " << character.size() << endl;             //Retorna quantos elementos ha na fila
+    cout << "\nTamanho da fila character : " << character.size() << endl;           //Retorna quantos elementos ha na fila
     cout << "Valor no inicio da fila character : " << character.front() << endl;    //imprimi o valor no inicio da fila
 
     character.pop();                                                                //Remove o primeiro elemento da fila
 
-    cout << "\nTamanho da fila character : " << character.size() << endl;             //Retorna quantos elementos ha na fila
+    cout << "\nTamanho da fila character : " << character.size() << endl;           //Retorna quantos elementos ha na fila
     cout << "Valor no inicio da fila character : " << character.front() << endl;    //imprimi o valor no inicio da fila
 
     character.pop();                                                                //Remove o primeiro elemento da fila
 
-    cout << "\nA fila character esta vazia : " << character.empty() << endl;          //Diz se a fila esta vazia ou nao
+    cout << "\nA fila character esta vazia : " << character.empty() << endl;        //Diz se a fila esta vazia ou nao
 
 
 
@@ -188,7 +188,7 @@ void queues (){
     copyNumero.swap(numero);                                                        //Troca o conteudo das filas numero e copyNumero
     cout << "\nValores da fila copyNumero sao trocados com os da fila numero\n";
 
-    cout << "\nA fila copyNumero esta vazia : " << copyNumero.empty() << endl;        //Diz se a fila esta vazia ou nao
+    cout << "\nA fila copyNumero esta vazia : " << copyNumero.empty() << endl;      //Diz se a fila esta vazia ou nao
     cout << "A fila numero esta vazia : " << numero.empty() << endl;                //Diz se a fila esta vazia ou nao
 
 
