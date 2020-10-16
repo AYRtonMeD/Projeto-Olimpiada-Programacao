@@ -23,7 +23,7 @@ int main() {
           number = number*3 +1;
         }
       }
-      if (majorCycle < cycle) majorCycle = cycle;      //nesse caso seria majorCycle > cycle
+      if (majorCycle < cycle) majorCycle = cycle;    
     }
     printf("%d %d %d\n", begin, end, majorCycle);
     majorCycle = 0;
