@@ -29,12 +29,13 @@ int main(){
 
 
 //Aqui serão testadas as estruturas de dados pilha
-//Pilhas são estuturas de dados onde os elementos são  sempre adicionados no
-//final dela, e só pode retirar o ultimo atual da pilha
+//Pilhas são estuturas de dados onde os elementos são sempre adicionados no
+//final dela, e só pode retirar o ultimo elemento atual da pilha
 
 void pilhas () {
     stack <int> valor;      //declara uma pilha do tipo inteiro
-    stack <string> nome;    //os simbolos <tipo> indicam templates no c++
+    stack <string> nome;    //e do tipo string
+                            //os simbolos <tipo> indicam templates no c++
                             //é uma forma de criar uma estrutura de dados de vários tipos
 
 
@@ -42,9 +43,10 @@ void pilhas () {
 
 
 
-    //Retorn 1 se a pilha estiver vazia, e 0 se não
+
     cout << "Primeira Parte-------------------------------------------------------------------------------\n";
 
+    //Retorna 1 se a pilha estiver vazia, e 0 se não
     cout << "A pilha valor esta vazia : " << valor.empty() << endl;
     cout << "A pilha nome esta vazia : " << nome.empty () << endl;
 
@@ -53,22 +55,34 @@ void pilhas () {
 
 
 
+
+
+
+
+
+
     cout << "\nSegunda Parte-------------------------------------------------------------------------------\n";
 
-    cout <<  "Tamanho da pilha valor : " << valor.size() << endl;      //Retorna quantos elementos ha na pilha
+    cout <<  "Tamanho da pilha valor : " << valor.size() << endl;        //Retorna quantos elementos ha na pilha
 
 
-    valor.push (10);                                                   //Adiciona o valor na pilha
-    cout << "Valor no topo da pilha valor : " << valor.top() << endl;  //imprimi o valor no topo da pilha
+    valor.push (10);                                                     //Adiciona o valor na pilha
+    cout << "\nValor no topo da pilha valor : " << valor.top() << endl;  //imprimi o valor no topo da pilha
 
-    valor.push (20);                                                   //Adiciona o valor na pilha
-    cout << "Valor no topo da pilha valor : " << valor.top() << endl;  //imprimi o valor no topo da pilha
+    valor.push (20);                                                     //Adiciona o valor na pilha
+    cout << "Valor no topo da pilha valor : " << valor.top() << endl;    //imprimi o valor no topo da pilha
 
-    valor.push (30);                                                   //Adiciona o valor na pilha
-    cout << "Valor no topo da pilha valor : " << valor.top() << endl;  //imprimi o valor no topo da pilha
+    valor.push (30);                                                     //Adiciona o valor na pilha
+    cout << "Valor no topo da pilha valor : " << valor.top() << endl;    //imprimi o valor no topo da pilha
 
 
-    cout << "Tamanho da pilha valor : " << valor.size() << endl;       //Retorna quantos elementos ha na pilha
+    cout << "\nTamanho da pilha valor : " << valor.size() << endl;       //Retorna quantos elementos ha na pilha
+
+
+
+
+
+
 
 
 
@@ -80,7 +94,7 @@ void pilhas () {
 
 
     nome.push ("ayrton");                                              //Adiciona o valor na pilha
-    cout << "Valor no topo da pilha nome : " << nome.top() << endl;    //imprimi o valor no topo da pilha
+    cout << "\nValor no topo da pilha nome : " << nome.top() << endl;  //imprimi o valor no topo da pilha
 
     nome.push ("valfredo");                                            //Adiciona o valor na pilha
     cout << "Valor no topo da pilha nome : " << nome.top() << endl;    //imprimi o valor no topo da pilha
@@ -89,7 +103,7 @@ void pilhas () {
     cout << "Valor no topo da pilha nome : " << nome.top() << endl;    //imprimi o valor no topo da pilha
 
 
-    cout << "Tamanho da pilha nome : " << nome.size() << endl;         //Retorna quantos elementos ha na pilha
+    cout << "\nTamanho da pilha nome : " << nome.size() << endl;       //Retorna quantos elementos ha na pilha
 
 
 
@@ -107,13 +121,19 @@ void pilhas () {
 
     nome.push("raimundo");                                             //Adiciona o valor na pilha
 
-    cout << "Tamanho da pilha nome : " << nome.size() << endl;         //Retorna quantos elementos ha na pilha
+    cout << "\nTamanho da pilha nome : " << nome.size() << endl;       //Retorna quantos elementos ha na pilha
     cout << "Valor no topo da pilha nome : " << nome.top() << endl;    //imprimi o valor no topo da pilha
 
-    nome.pop();                                                        //Remove o valor na pilha
+    nome.pop();                                                        //Remove o ultimo elemento da pilha
 
-    cout << "Tamanho da pilha nome : " << nome.size() << endl;         //Retorna quantos elementos ha na pilha
+    cout << "\nTamanho da pilha nome : " << nome.size() << endl;       //Retorna quantos elementos ha na pilha
     cout << "Valor no topo da pilha nome : " << nome.top() << endl;    //imprimi o valor no topo da pilha
+
+
+
+
+
+
 
 
 
@@ -121,6 +141,7 @@ void pilhas () {
 
 
     cout << "\nQuinta Parte-------------------------------------------------------------------------------\n";
+
     stack <int> copyValor = valor;                                     //Faz uma copia da pilha valor
     cout << "valores da pilha copyValor:\n";
     while (!copyValor.empty()){                                        //Enquanto a pilha nao estiver vazia
@@ -135,7 +156,20 @@ void pilhas () {
 
 
 
-    copyValor.swap(valor);                                             //Troca o conteudo de duas pilhas
-                                                                       //no caso troca os valores das pilha
-                                                                       //valor e copyValor(que esta vazia)
+
+
+
+
+    cout << "\nSexta Parte-------------------------------------------------------------------------------\n";
+
+
+    cout << "A pilha copyValor esta vazia : " << copyValor.empty() << endl;        //Diz se a pilha esta vazia ou nao
+    cout << "A pilha valor esta vazia : " << valor.empty() << endl;                //Diz se a pilha esta vazia ou nao
+
+    copyValor.swap(valor);
+    cout << "\nValores da pilha copyValor sao trocados com os da pilha valor\n";   //Troca o conteudo das pilhas valor e copyValor
+
+    cout << "\nA pilha copyValor esta vazia : " << copyValor.empty() << endl;      //Diz se a pilha esta vazia ou nao
+    cout << "A pilha valor esta vazia : " << valor.empty() << endl;                //Diz se a pilha esta vazia ou nao
+
 }
